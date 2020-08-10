@@ -1,35 +1,32 @@
-
-
-/* Above is the reset text, not design text */
-
 * {
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  max-width:100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 body {
-  background-image:linear-gradient(137deg, rgba(9,9,16,100) 0%, rgb(72, 72, 99) 35%, rgba(0,212,255,1) 100%);
-
+  background-image: linear-gradient(
+    137deg,
+    rgba(9, 9, 16, 100) 0%,
+    rgb(72, 72, 99) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 /* Universal Selector */
 /* This is the header section */
 
 header {
-display: flex;
+  display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between; 
+  justify-content: space-between;
+  padding-bottom: 2%;
 }
-
 
 nav {
   display: flex;
   /* flex-wrap: nowrap; */
-  background-color: black;
-  /* width: 40%;
-  padding:;
-  border-radius: 4%; */
+  width: 30%;
 }
 
 a {
@@ -40,32 +37,46 @@ a {
 .buttons {
   display: inline-block;
   width: 40%;
-  padding:10px 20px;
-  border-radius: 4%;
+  padding: 1% 1%;
+  border-radius: 10%;
   border: white solid 3px;
-
+  background-color: black;
 }
-
 h1 {
   display: flex;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    flex: 50%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 .headBG {
   background-attachment: fixed;
   background-position: center;
-  background-image: url('https://images.unsplash.com/photo-1525873020571-08690094e301?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-image: url("https://images.unsplash.com/photo-1525873020571-08690094e301?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   height: 60vh;
   padding-bottom: 8%;
 
   /* background-image: linear-gradient(111 or 137deg, #020024(stop 0), 090979(stop 35), 00d4ff(stop 100)*/
 }
 
+h2 {
+  padding-top: 10%;
+  text-align: center;
+}
 
-
+.headBG a {
+  text-align: center;
+}
 /*  This is the projects section */
 
-#boxes{
+#boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -74,7 +85,7 @@ h1 {
 
 .project-boxes {
   width: 30%;
-  margin:  1% 1%;
+  margin: 1% 1%;
   padding: 0 2%;
 }
 
@@ -83,12 +94,13 @@ img {
 }
 
 /* testng of media query */
+
 @media screen and (max-width: 800px) {
-  #boxes {
+  .project-boxes {
     flex: 50%;
     flex-wrap: wrap;
     flex-direction: row;
-    margin:auto;
+    margin: auto;
   }
 }
 
