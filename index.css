@@ -99,14 +99,6 @@ footer {
 
 /* Below is phone-sized media query */
 @media(max-width: 500px) {
-  header {
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 45%;
-
-
-  }
-  
   
   header nav {
     width: 80%;
